@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary-fixed": "#dde1ff",
+          "on-error": "#ffffff",
+          "background": "#faf8ff",
+          "on-tertiary-container": "#eff0ff",
+          "surface-container-low": "#f2f3ff",
+          "outline": "#737686",
+          "on-secondary": "#ffffff",
+          "surface-container-highest": "#dae2fd",
+          "on-tertiary-fixed": "#001453",
+          "primary-container": "#2563eb",
+          "secondary": "#735c00",
+          "secondary-fixed": "#ffe083",
+          "on-tertiary": "#ffffff",
+          "on-primary-fixed-variant": "#003ea8",
+          "on-background": "#131b2e",
+          "surface-container": "#eaedff",
+          "inverse-on-surface": "#eef0ff",
+          "surface-variant": "#dae2fd",
+          "tertiary-fixed-dim": "#b8c4ff",
+          "secondary-container": "#fed01b",
+          "on-primary-fixed": "#00174b",
+          "primary-fixed": "#dbe1ff",
+          "error-container": "#ffdad6",
+          "primary-fixed-dim": "#b4c5ff",
+          "on-surface": "#131b2e",
+          "on-secondary-fixed": "#231b00",
+          "on-tertiary-fixed-variant": "#173bab",
+          "surface-tint": "#0053db",
+          "on-primary-container": "#eeefff",
+          "on-error-container": "#93000a",
+          "primary": "#004ac6",
+          "surface-dim": "#d2d9f4",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-high": "#e2e7ff",
+          "inverse-primary": "#b4c5ff",
+          "outline-variant": "#c3c6d7",
+          "secondary-fixed-dim": "#eec200",
+          "error": "#ba1a1a",
+          "on-secondary-fixed-variant": "#574500",
+          "inverse-surface": "#283044",
+          "on-surface-variant": "#434655",
+          "surface": "#faf8ff",
+          "on-primary": "#ffffff",
+          "surface-bright": "#faf8ff",
+          "tertiary": "#2c4bb9",
+          "tertiary-container": "#4865d4",
+          "on-secondary-container": "#6f5900"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "3rem",
+          "space-2xl": "4.5rem",
+          "margin": "1.5rem",
+          "gutter-sm": "1rem",
+          "margin-lg": "4rem",
+          "space-xs": "0.375rem",
+          "gutter-lg": "2rem",
+          "space-md": "1.25rem",
+          "margin-md": "2.5rem",
+          "gutter": "1.5rem",
+          "space-sm": "0.75rem",
+          "space-lg": "2rem"
+        },
+        "fontFamily": {
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-xl-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "17px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">plumbing</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-primary leading-none">A1 ANYTIME</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Plumbing, Heating &amp; AC</span></div></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors text-primary font-bold" data-path="services" href="#">Services</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="why-choose-us" href="#">Why Choose Us</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="pricing" href="#">Pricing</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="reviews" href="#">Reviews</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="#">FAQ</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="google-location" href="#">Google Location</a></nav><div class="flex items-center gap-space-md"><a class="hidden md:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high text-primary hover:bg-surface-container-highest transition-colors" href="tel:+19737694940"><span class="material-symbols-outlined text-[18px] text-error">emergency</span><div class="flex flex-col text-left"><span class="font-label-sm text-[10px] uppercase font-bold text-on-surface-variant leading-none">24/7 Dispatch</span><span class="font-label-md text-label-md font-bold leading-tight">+1 (973) 769-4940</span></div></a><a class="flex items-center gap-space-xs px-space-lg py-space-sm rounded-xl bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed transition-all font-label-md text-label-md shadow-sm active:scale-95" data-path="request-service" href="#"><span class="material-symbols-outlined text-[18px]">calendar_clock</span><span>Book Online</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Toast Notification on Form Submission -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl bg-surface-container-lowest shadow-xl text-on-surface border border-outline-variant/30">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-primary">Emergency Request Dispatched!</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Our NJ field tech is calling you in &lt; 2 minutes.</p>
+</div>
+</div>
+</div>
+<!-- SECTION 1: HERO (Handy-Man Composition) -->
+<section class="w-full max-w-7xl mx-auto px-margin lg:px-margin-lg pt-space-md pb-space-xl">
+<!-- Top Row: Headline + Short Intro Side-by-Side -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-gutter pb-space-lg">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high text-primary mb-space-xs">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">24/7/365 On-Call Fleet Ready</span>
+</div>
+<h1 class="font-display-hero text-[34px] sm:text-[44px] lg:text-display-hero font-extrabold text-on-surface leading-tight tracking-tight">
+          Top-rated <span class="text-primary underline decoration-secondary-container decoration-4">Plumbing &amp; HVAC</span> services near you
+        </h1>
+</div>
+<div class="max-w-sm flex flex-col items-start lg:items-end gap-space-sm text-left lg:text-right">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Master-licensed New Jersey technicians delivering rapid emergency solutions, upfront pricing, and absolute mechanical precision.
+        </p>
+<div class="flex items-center gap-space-sm">
+<a class="px-space-md py-2 rounded-xl bg-surface-container hover:bg-surface-container-highest transition-colors font-label-md text-label-md text-primary font-bold" href="#services-section">
+            View Services
+          </a>
+<a class="px-space-md py-2 rounded-xl bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-md text-label-md font-bold flex items-center gap-1" href="tel:+19737694940">
+<span class="material-symbols-outlined text-[16px]">call</span> Direct Dispatch
+          </a>
+</div>
+</div>
+</div>
+<!-- Hero Photography Container with Overlaid Floating Request Form -->
+<div class="relative w-full rounded-3xl overflow-hidden shadow-xl bg-surface-container-low min-h-[440px] md:min-h-[520px] lg:min-h-[580px] flex items-center">
+<img alt="Master HVAC and plumbing technician in a clean royal blue uniform servicing a residential heating and AC unit" class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD073GF9s7sg6i0xPh0P9RaG3BKRHH4DYhQ3yfETRMtmKxA_Xf85cKlXBayENXay3AihmRU0PHyK8Alz5oONIaNcWI1xplYUSjAP970iIyF4ShXux1KsDKHBGlhiU5mfGXHbrqWb7MAAOdzhkooX-6WVaFu8YDnsdNmMDSqQzWUS1cmSBy4MK-vAg44S_X511M85g0xlIFxi7mMglYiikcin9GvJq9eTqE0LT2iUCK1vcB8cE_SB0NLrA"/>
+<div class="absolute inset-0 bg-gradient-to-r from-on-background/60 via-on-background/20 to-transparent"></div>
+<!-- Emergency Response Pill Overlay on Photo -->
+<div class="absolute top-6 left-6 hidden sm:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest/90 backdrop-blur shadow-md">
+<span class="material-symbols-outlined text-[20px] text-error">fmd_good</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Serving Bergen, Essex &amp; Passaic Counties</span>
+</div>
+<!-- Floating "Request a service" Form Card (Direct Handy-Man Element) -->
+<div class="relative ml-auto mr-4 sm:mr-8 my-8 w-full max-w-md bg-primary-container text-on-primary p-space-lg rounded-2xl shadow-2xl">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-primary">Request a service</h2>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-0.5">Rapid dispatch • Response within 15 min</p>
+</div>
+<div class="w-10 h-10 rounded-xl bg-on-primary/10 flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined text-[22px]">bolt</span>
+</div>
+</div>
+<form class="flex flex-col gap-space-sm mt-space-xs" id="heroServiceForm" onsubmit="event.preventDefault(); submitEmergencyForm(this);">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-on-primary-container uppercase tracking-wide">Name</label>
+<input class="w-full h-11 px-space-sm rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md outline-none placeholder:text-outline" placeholder="Dennis Barrett" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-on-primary-container uppercase tracking-wide">Phone Number</label>
+<input class="w-full h-11 px-space-sm rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md outline-none placeholder:text-outline" placeholder="+1 (973) 769-4940" required="" type="tel"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-on-primary-container uppercase tracking-wide">Select Service</label>
+<select class="w-full h-11 px-space-sm rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md outline-none cursor-pointer">
+<option value="plumbing">Emergency Plumbing &amp; Water Leak</option>
+<option value="heating">Heating &amp; Boiler Failure</option>
+<option value="ac">Central AC &amp; Ductless Cooling</option>
+<option value="drain">Clogged Drain / Sewer Backup</option>
+<option value="waterheater">Hot Water Heater Replacement</option>
+</select>
+</div>
+<button class="mt-space-xs w-full py-3.5 px-space-md rounded-xl bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-headline-sm text-headline-sm font-bold tracking-tight shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-space-xs" type="submit">
+<span>Request Fast Dispatch</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- SECTION 2: BRAND PARTNER BAR (Handy-Man Style Monochrome Logos) -->
+<div class="w-full bg-inverse-surface text-inverse-on-surface py-space-md">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-lg flex flex-wrap items-center justify-between gap-gutter">
+<div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[24px] text-secondary-fixed">precision_manufacturing</span>
+<span class="font-headline-sm text-headline-sm uppercase tracking-wider font-extrabold text-surface-container-lowest">BOSCH</span>
+</div>
+<div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[24px] text-secondary-fixed">mode_fan</span>
+<span class="font-headline-sm text-headline-sm uppercase tracking-wider font-extrabold text-surface-container-lowest">CARRIER</span>
+</div>
+<div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[24px] text-secondary-fixed">water_heater</span>
+<span class="font-headline-sm text-headline-sm uppercase tracking-wider font-extrabold text-surface-container-lowest">RHEEM</span>
+</div>
+<div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[24px] text-secondary-fixed">valve</span>
+<span class="font-headline-sm text-headline-sm uppercase tracking-wider font-extrabold text-surface-container-lowest">MOEN</span>
+</div>
+<div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[24px] text-secondary-fixed">heat_pump</span>
+<span class="font-headline-sm text-headline-sm uppercase tracking-wider font-extrabold text-surface-container-lowest">TRANE</span>
+</div>
+<div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[24px] text-secondary-fixed">shower</span>
+<span class="font-headline-sm text-headline-sm uppercase tracking-wider font-extrabold text-surface-container-lowest">KOHLER</span>
+</div>
+</div>
+</div>
+<!-- SECTION 3: VALUE STATEMENT & 25+ YEARS OF EXPERIENCE (Handy-Man Style Split) -->
+<section class="w-full max-w-7xl mx-auto px-margin lg:px-margin-lg py-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<h2 class="font-headline-xl text-[26px] sm:text-headline-xl font-bold text-on-surface leading-tight">
+          Our top-rated tradesmen provide dependable mechanical repairs, preventive tune-ups, and emergency installations with zero guesswork.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          From frozen pipes and sudden boiler failures at 3 AM to comprehensive high-efficiency central heat pump retrofits, our master-licensed plumbers and HVAC specialists guarantee transparent upfront rates and surgical accuracy.
+        </p>
+<div class="flex flex-wrap items-center gap-space-lg pt-space-xs text-primary font-bold">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">verified</span>
+<span class="font-label-md text-label-md">Licensed &amp; Fully Bonded</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">alarm</span>
+<span class="font-label-md text-label-md">Guaranteed On-Time Dispatch</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">price_check</span>
+<span class="font-label-md text-label-md">100% Upfront Pricing</span>
+</div>
+</div>
+</div>
+<!-- Prominent Yellow Experience Card (From Handy-Man image) -->
+<div class="lg:col-span-4 bg-secondary-container p-space-xl rounded-3xl flex flex-col items-center justify-center text-center shadow-lg transform hover:-translate-y-1 transition-transform">
+<span class="font-display-hero text-[64px] font-black text-on-secondary-container leading-none tracking-tight">25+</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-secondary-container uppercase tracking-wide mt-2">Years of Experience</span>
+<span class="font-body-sm text-body-sm text-on-secondary-container/80 mt-1">Proudly Serving Northern New Jersey</span>
+</div>
+</div>
+</section>
+<!-- SECTION 4: OUR SERVICES (Handy-Man 4-Card Visual Grid) -->
+<section class="w-full max-w-7xl mx-auto px-margin lg:px-margin-lg pb-space-2xl" id="services-section">
+<div class="flex flex-col sm:flex-row items-start sm:items-end justify-between pb-space-lg gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary tracking-widest">Precision Trade Mastery</span>
+<h2 class="font-headline-xl text-headline-xl font-bold text-on-surface">
+          Our <span class="text-primary">services</span>
+</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Every truck is a fully equipped mobile warehouse ready to resolve your plumbing, boiler, or AC problem in one visit.
+      </p>
+</div>
+<!-- 4 Tall Rounded Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="group relative rounded-3xl overflow-hidden bg-surface-container shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-[380px]">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A licensed master plumber repairing copper piping under a clean residential sink using specialized brass fittings, clear focus, bright workshop lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuO-SKoryaRIdMO9n3jN2fqxS2uK2KTZAA4pVEKa9xLSlWAtsVmgtRCqru6Ofz3-UuRlAKYoH6a_3-lhCLVWLePeCjQ_-q0eejupWUpEICBXzcMAKUKy5ddyrVrKbdQbF4bax-7hj7Lh3hi7JafYQ8ZKclCc9uKs8nmwZLsMRE9N_grMFdj3SY2VPf6xJ-NSH8vgHxtX9jpZfljBilZKu9NHec-oDAvSYwR4xbjNG3uP-Y_oYdLcou-g')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/30 to-transparent flex flex-col justify-end p-space-md text-on-primary">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[20px]">water_damage</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-surface-container-lowest">Plumbing &amp; Leak Repair</h3>
+<p class="font-body-sm text-body-sm text-surface-container mt-1 line-clamp-2">Slab leaks, repiping, burst pipes, smart shutoff valves, and high-pressure repairs.</p>
+<a class="mt-space-sm inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary-fixed font-bold hover:underline" href="tel:+19737694940">
+<span>Call for Dispatch</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative rounded-3xl overflow-hidden bg-surface-container shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-[380px]">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Close up photography of a high-tech modern residential boiler and furnace burner being calibrated with digital diagnostic tools, crisp professional quality" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuBvgrMLlLKDM18HKPTc8hvyamChtUIz5gM16JRiSNTvo9byjmSwc36EEVZJ3hkairpIw2QmbyXcPVbfKz9WPu1Vr0vQDC3QpVywVSg4HCfC9T7FWNxjOzyIhEcBsegskbCf20Gfuxhm0SVnjoF58ceUhMm0cLBV-Atq6bip2QUJyNc-ynq5qhiPzYtkxIJlUlVLiJyLY8_DmebLm9Scj4LJUIh0G2GpjpI8pC7qHvXqA7C-xgOUUwWg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/30 to-transparent flex flex-col justify-end p-space-md text-on-primary">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[20px]">local_fire_department</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-surface-container-lowest">Boilers &amp; Heating</h3>
+<p class="font-body-sm text-body-sm text-surface-container mt-1 line-clamp-2">High-efficiency condensing boilers, gas furnaces, steam radiators, and hydronic heating.</p>
+<a class="mt-space-sm inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary-fixed font-bold hover:underline" href="tel:+19737694940">
+<span>Call for Dispatch</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative rounded-3xl overflow-hidden bg-surface-container shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-[380px]">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Close up of an air conditioning technician servicing an inverter central AC compressor fan unit outside a residential home, sunny daytime" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-4QzZn22NsF5IrvOiR3ymKNgn6ROi8WDtv3P_kJq6-UGW81-8SP4ohKZgxK3oT7-VJ4S5ira6kdOZrYupCo_dwLPVAEdjL5ORZG79U9Ui0cbBa36-3II2jhTFpewNeYcBzOxKFTlaEkucfF44EsIbMCW_thkps0TOvhYVlGMMFaZhc5h_0_TGi0Tb8s2ay7ZCKOtwIsg0hjUY3B7SVZq83VmeOSIQ48ANnFac5-zGSeDOQKlFyWC2hQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/30 to-transparent flex flex-col justify-end p-space-md text-on-primary">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[20px]">ac_unit</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-surface-container-lowest">Central AC &amp; Heat Pumps</h3>
+<p class="font-body-sm text-body-sm text-surface-container mt-1 line-clamp-2">Ductless mini-splits, freon leak detection, compressor swaps, and SEER2 energy upgrades.</p>
+<a class="mt-space-sm inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary-fixed font-bold hover:underline" href="tel:+19737694940">
+<span>Call for Dispatch</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative rounded-3xl overflow-hidden bg-surface-container shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-[380px]">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Commercial hydro jetting equipment clearing a main sewer line with high pressure water nozzles, sharp industrial plumbing detail" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZmAIF9H-Vzb0c7t53BpJMYNjBY5mnYOs8METbsdGenjATRN3ATd2CchHXJCvuznzK-xtukhyFUklPtKBZuc00JHysr3m7kKvdQ97Ad_ysf1EShJY_6ZkTfEG2QttwPy5yS6Q68nRX-kC1XcQh9N4P5sHBE5pis1CFkn3oafPS0nUR25yLL55r0X3T4Rs31VH8t9yb3IKHXPyGItN85lSg6rIaFnZpRumulJXDWwxz_Daz3fPB_JnVUA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/30 to-transparent flex flex-col justify-end p-space-md text-on-primary">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[20px]">sanitizer</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-surface-container-lowest">Drain &amp; Sewer Clearing</h3>
+<p class="font-body-sm text-body-sm text-surface-container mt-1 line-clamp-2">In-pipe video camera inspection, 4000 PSI hydro jetting, rooter snaking, and trenchless repair.</p>
+<a class="mt-space-sm inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary-fixed font-bold hover:underline" href="tel:+19737694940">
+<span>Call for Dispatch</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: APPLIANCES & HEATING SYSTEM EXPERTISE (Handy-Man Style Split with Image Left) -->
+<section class="w-full max-w-7xl mx-auto px-margin lg:px-margin-lg pb-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<!-- Photo Left -->
+<div class="lg:col-span-6 rounded-3xl overflow-hidden shadow-xl">
+<img alt="Certified technician holding diagnostic tools next to high-efficiency water heater" class="w-full h-[460px] object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWiIFYdTECW6XtBPXLab8YbJW_57nvP9SWmkC3eF89p0WiYoBFPSI_w4-e6IsiU_4o2-ziCp6kD1tOe30DARnv9oEtFIEySAxSs4HmZ6Ws8gNEWXQkSi2OM23iN0KO3NaXJQ9-cEcp9BQjV-M7toCuClFkcYsH6S7TzbqF-zm8b3i-0b6jsO4y46jBVN5vcQVNbhdMZqQdFfEGLxXwFe2gVMoZRWVxlQSpaKPkoOeg7m3uT9mdkvW2SQ"/>
+</div>
+<!-- Content Right -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary tracking-widest">Comprehensive System Care</span>
+<h2 class="font-headline-xl text-[28px] sm:text-headline-xl font-bold text-on-surface leading-tight">
+          We take care of your every <span class="text-primary">appliance &amp; mechanical system</span>
+</h2>
+<!-- 2x2 Checklist (Handy-Man format) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm py-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">check_circle</span>
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">Comprehensive Repairs</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">check_circle</span>
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">Skilled Master Techs</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">check_circle</span>
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">Routine Seasonal Checks</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">check_circle</span>
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">Guaranteed Satisfaction</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">check_circle</span>
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">Immediate 24/7 Response</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">check_circle</span>
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">Flat-Rate Pricing</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          We handle repairs, seasonal maintenance, and full emergency replacements for all major boiler brands, hot water systems, and ducted heat pumps. Trust our team to ensure your systems perform safely, silently, and efficiently.
+        </p>
+<div>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-3.5 rounded-xl bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-headline-sm text-headline-sm font-bold shadow-md hover:shadow-lg transition-all" href="tel:+19737694940">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span>Request a Service</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: FRESH APPROACHES & TECHNOLOGICAL BREAKTHROUGHS (Handy-Man Style Split with Image Right) -->
+<section class="w-full max-w-7xl mx-auto px-margin lg:px-margin-lg pb-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<!-- Content Left -->
+<div class="lg:col-span-6 flex flex-col gap-space-md order-2 lg:order-1">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary tracking-widest">Next-Generation Diagnostics</span>
+<h2 class="font-headline-xl text-[28px] sm:text-headline-xl font-bold text-on-surface leading-tight">
+          Fresh approaches and technological <span class="text-primary">breakthroughs</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          Say goodbye to destructive drywall tearing and guesswork. Our technicians employ high-resolution fiberoptic pipe cameras, infrared thermal imaging for in-wall pipe leak detection, and digital micron pressure gauges.
+        </p>
+<!-- Stat Row -->
+<div class="grid grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-md rounded-2xl bg-surface-container">
+<span class="font-display-hero text-[36px] font-black text-primary leading-none">99.4%</span>
+<p class="font-label-sm text-label-sm font-bold text-on-surface-variant mt-1">First-Visit Fix Accuracy</p>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container">
+<span class="font-display-hero text-[36px] font-black text-primary leading-none">45 min</span>
+<p class="font-label-sm text-label-sm font-bold text-on-surface-variant mt-1">Avg Northern NJ Dispatch</p>
+</div>
+</div>
+<div>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-3 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-headline-sm text-headline-sm font-bold transition-colors" href="#pricing-section">
+<span>Explore Pricing &amp; Plans</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Photo Right -->
+<div class="lg:col-span-6 rounded-3xl overflow-hidden shadow-xl order-1 lg:order-2">
+<div class="w-full h-[460px] bg-cover bg-center" data-alt="Senior HVAC technician explaining high efficiency digital heat pump diagnostics to a satisfied homeowner couple in a clean kitchen utility area, bright and warm lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAyPfbDU253-BrhSkGIK56FmBUaIo-bVc_4LoXuuiALAzr5N8tRwNWYfDvyJbAwD5kA1G0KKLQC4ve51UFAPIQP3C_nVPo7RH5SNpAWsKIbrqTQ5Ot_t_XDtSKWQBvXZ248kvuXvxjiXEzv4DFQw9eDtV-wvzOFqAJ0rGGJ20hSKlwun2xhb2hua53g8-WAt_y9XHPTCSd4TkCV2ue6Zlr2KKx38Wv1dL1O5i1VrkXQkw-m8iQJh-CwVA')"></div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: INTERACTIVE VIDEO / ACTION PREVIEW BANNER (Handy-Man Style Video Card with Pause Pill) -->
+<section class="w-full max-w-7xl mx-auto px-margin lg:px-margin-lg pb-space-2xl">
+<div class="relative w-full h-[360px] sm:h-[440px] rounded-3xl overflow-hidden shadow-xl bg-inverse-surface group">
+<div class="w-full h-full bg-cover bg-center" data-alt="Close up dramatic cinematic shot of a master technician tightening polished chrome under-sink P-trap plumbing fittings with soft warm workshop illumination" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzewZhP-vh3QST47s1GJsZ63Yjg9PdD93c5DKLhy4XU3fC-C2P_s6WFYaqLKiYfzqwKd-tP1t44_VRPE6ADBxSRcG_xXq8gyEx6ciUhjnFGuga-RvDz4f-n7qt2h6JoFVDQFwlgkLhneM05tKXzrFyBBhbfn4fzsi8Tg5Ac7JHzw_GMTwH7_lfb-itRlnOeklqCF-QqIf-JiHeTRnM0QNNwZGR-92AcFGR-EGRP8JpmHxoOtQK2BOq9A')"></div>
+<div class="absolute inset-0 bg-on-background/40"></div>
+<!-- Top Right Floating Yellow Pill Badge (Direct Handy-Man Detail) -->
+<div class="absolute top-6 right-6 w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-lg cursor-pointer hover:scale-105 transition-transform" onclick="togglePlayState(this)">
+<span class="material-symbols-outlined text-[24px]">pause</span>
+</div>
+<!-- Bottom Overlay Info -->
+<div class="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-space-sm text-on-primary">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container font-bold">Watch Precision in Action</span>
+<h3 class="font-headline-lg text-headline-lg font-bold text-surface-container-lowest">Zero Compromise Trade Workmanship</h3>
+</div>
+<a class="px-space-md py-2.5 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md font-bold hover:bg-surface-container transition-colors shadow" href="tel:+19737694940">
+          Speak With On-Duty Tech
+        </a>
+</div>
+</div>
+</section>
+<!-- SECTION 8: CLIENT TESTIMONIALS (Handy-Man Dark Navy Block) -->
+<section class="w-full max-w-7xl mx-auto px-margin lg:px-margin-lg pb-space-2xl">
+<div class="w-full bg-inverse-surface text-inverse-on-surface rounded-3xl p-space-xl sm:p-space-2xl shadow-2xl relative overflow-hidden">
+<!-- Ambient Glow -->
+<div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-primary/20 blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center relative z-10">
+<!-- Left Side: Header & Carousel Nav Controls -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed font-bold">Verified Google Reviews</span>
+<h2 class="font-headline-xl text-[30px] sm:text-headline-xl font-bold text-surface-container-lowest leading-tight">
+            See how we've made a difference for our valued <span class="text-tertiary-fixed-dim">clients</span>
+</h2>
+<p class="font-body-md text-body-md text-surface-container">
+            Over 1,200+ five-star verified emergency interventions throughout northern New Jersey communities.
+          </p>
+<!-- Navigation Arrow Buttons (Handy-Man Style) -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="w-11 h-11 rounded-full border border-surface-container/30 text-surface-container-lowest hover:bg-surface-container-lowest/10 flex items-center justify-center transition-colors" onclick="changeTestimonial(-1)">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<button class="w-11 h-11 rounded-full border border-surface-container/30 text-surface-container-lowest hover:bg-surface-container-lowest/10 flex items-center justify-center transition-colors" onclick="changeTestimonial(1)">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Right Side: Testimonial Card with 5 Stars -->
+<div class="lg:col-span-7 bg-surface-container-low/10 backdrop-blur-md p-space-lg sm:p-space-xl rounded-2xl border border-surface-container/10">
+<div class="flex items-center gap-1 text-secondary-fixed mb-space-sm" id="starContainer">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="font-body-lg text-body-lg text-surface-container-lowest leading-relaxed min-h-[90px]" id="testimonialText">
+            “The emergency team at A1 Anytime responded at 1:30 AM when our basement water heater blew a valve. They were here within 35 minutes, shut down the line, and installed a clean replacement by morning. Lifesavers!”
+          </div>
+<div class="flex items-center gap-space-sm mt-space-md pt-space-md border-t border-surface-container/20">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container font-headline-sm text-headline-sm font-bold flex items-center justify-center" id="clientAvatar">
+              LM
+            </div>
+<div>
+<p class="font-headline-sm text-[16px] font-bold text-surface-container-lowest" id="clientName">Lisa M.</p>
+<p class="font-body-sm text-body-sm text-surface-container" id="clientLocation">Wayne, NJ • Verified Homeowner</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 9: TRANSPARENT PRICING PLANS (Handy-Man 3-Card Structure) -->
+<section class="w-full max-w-7xl mx-auto px-margin lg:px-margin-lg pb-space-2xl" id="pricing-section">
+<div class="text-center max-w-2xl mx-auto pb-space-xl">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary tracking-widest">No Hidden Fees • Flat-Rate Upfront</span>
+<h2 class="font-headline-xl text-headline-xl font-bold text-on-surface mt-1">
+        Pricing <span class="text-primary">plans</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+        Simple, predictable pricing for diagnostics, seasonal maintenance, and year-round protection.
+      </p>
+</div>
+<!-- 3 Pricing Cards (Handy-Man Style: Gray Card / Royal Blue Center / Dark Navy Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter items-stretch">
+<!-- Card 1: Standard / Basic (Gray / Light) -->
+<div class="rounded-3xl bg-surface-container p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Basic Diagnostic Visit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Comprehensive system trouble evaluation and exact flat-rate quote.</p>
+<div class="flex items-baseline gap-1 my-space-md">
+<span class="font-display-hero text-[46px] font-black text-on-surface leading-none">$69</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/visit</span>
+</div>
+<div class="font-label-sm text-label-sm uppercase font-bold text-on-surface tracking-wider pb-space-xs">Includes</div>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">check_circle</span>
+<span>Full multi-point mechanical inspection</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">check_circle</span>
+<span>Digital pressure &amp; thermography scan</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">check_circle</span>
+<span>Written flat-rate quote before work</span>
+</li>
+<li class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-outline">check_circle</span>
+<span>Fee credited toward approved repairs</span>
+</li>
+</ul>
+</div>
+<button class="mt-space-lg w-full py-3 rounded-xl bg-surface-container-highest hover:bg-surface-container-high text-on-surface font-headline-sm text-headline-sm font-bold transition-colors" onclick="selectPlan('Basic Diagnostic Visit ($69)')">
+          Get Started
+        </button>
+</div>
+<!-- Card 2: Featured / Popular (Vibrant Royal Blue with 'Popular' Badge) -->
+<div class="rounded-3xl bg-primary text-on-primary p-space-lg flex flex-col justify-between shadow-2xl relative transform lg:-translate-y-2">
+<div class="absolute -top-3.5 right-6 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[11px] font-bold uppercase tracking-wider shadow">
+          Most Popular
+        </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-surface-container-lowest">Standard Seasonal Tune-Up</h3>
+<p class="font-body-sm text-body-sm text-surface-container mt-1">Deep cleaning &amp; full recalibration for heating or cooling systems.</p>
+<div class="flex items-baseline gap-1 my-space-md">
+<span class="font-display-hero text-[46px] font-black text-surface-container-lowest leading-none">$149</span>
+<span class="font-body-sm text-body-sm text-surface-container">/system</span>
+</div>
+<div class="font-label-sm text-label-sm uppercase font-bold text-surface-container-lowest tracking-wider pb-space-xs">Features Included</div>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-container-lowest">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">check_circle</span>
+<span>All basic inspection protocols</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">check_circle</span>
+<span>Burner / condenser chemical coil clean</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">check_circle</span>
+<span>Refrigerant &amp; flue gas safety check</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">check_circle</span>
+<span>Air filter change &amp; thermostat sync</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">check_circle</span>
+<span>Complete electrical amperages audit</span>
+</li>
+</ul>
+</div>
+<button class="mt-space-lg w-full py-3.5 rounded-xl bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-headline-sm text-headline-sm font-bold shadow transition-all" onclick="selectPlan('Seasonal Tune-Up ($149)')">
+          Schedule Tune-Up
+        </button>
+</div>
+<!-- Card 3: Deep Navy Renovation / Home Protection Club (Handy-Man Dark Card) -->
+<div class="rounded-3xl bg-inverse-surface text-inverse-on-surface p-space-lg flex flex-col justify-between shadow-xl">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-surface-container-lowest">Annual Protection Club</h3>
+<p class="font-body-sm text-body-sm text-surface-container mt-1">Total VIP priority coverage for homeowners &amp; landlords.</p>
+<div class="flex items-baseline gap-1 my-space-md">
+<span class="font-display-hero text-[46px] font-black text-surface-container-lowest leading-none">$249</span>
+<span class="font-body-sm text-body-sm text-surface-container">/year</span>
+</div>
+<div class="font-label-sm text-label-sm uppercase font-bold text-surface-container-lowest tracking-wider pb-space-xs">Club Privileges</div>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-container">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+<span>2 full seasonal tune-ups (Heating + AC)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+<span>Zero $0 dispatch &amp; emergency diagnostic fee</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+<span>15% discount on all repairs &amp; parts</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+<span>Guaranteed front-of-line priority dispatch</span>
+</li>
+</ul>
+</div>
+<button class="mt-space-lg w-full py-3 rounded-xl bg-surface-container-low/20 hover:bg-surface-container-low/30 text-surface-container-lowest font-headline-sm text-headline-sm font-bold transition-colors" onclick="selectPlan('Annual Protection Club ($249)')">
+          Join the Club
+        </button>
+</div>
+</div>
+</section>
+<!-- SECTION 10: PROMO CTA BANNER (Handy-Man Golden Yellow Full Banner) -->
+<section class="w-full max-w-7xl mx-auto px-margin lg:px-margin-lg pb-space-2xl">
+<div class="w-full bg-secondary-container text-on-secondary-container rounded-3xl p-space-xl sm:p-space-2xl text-center shadow-lg flex flex-col items-center justify-center gap-space-md">
+<h2 class="font-display-hero text-[30px] sm:text-[42px] font-black max-w-3xl leading-tight tracking-tight">
+        Don't wait! Schedule your plumbing or HVAC service now for top-quality service
+      </h2>
+<p class="font-body-lg text-body-lg text-on-secondary-container max-w-xl">
+        On-call dispatchers are answering calls right now. Immediate response across northern NJ.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-space-sm pt-space-xs">
+<a class="px-space-xl py-3.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-headline-sm text-headline-sm font-bold shadow-md transition-all flex items-center gap-space-xs" href="tel:+19737694940">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>Call (973) 769-4940</span>
+</a>
+<a class="px-space-xl py-3.5 rounded-xl bg-inverse-surface text-surface-container-lowest hover:bg-on-surface font-headline-sm text-headline-sm font-bold shadow-md transition-all flex items-center gap-space-xs" href="#heroServiceForm">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span>Request Fast Dispatch</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 11: RECENT BLOG / FIELD GUIDES (Handy-Man 3-Column Layout) -->
+<section class="w-full max-w-7xl mx-auto px-margin lg:px-margin-lg pb-space-2xl">
+<div class="flex items-center justify-between pb-space-lg">
+<h2 class="font-headline-xl text-headline-xl font-bold text-on-surface">
+        Recent <span class="text-primary">articles &amp; tips</span>
+</h2>
+<a class="font-label-md text-label-md text-primary font-bold hover:underline hidden sm:inline-flex items-center gap-1" href="#services-section">
+<span>View all homeowner guides</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Article 1 -->
+<article class="flex flex-col gap-space-sm group cursor-pointer">
+<div class="w-full h-56 rounded-2xl overflow-hidden bg-surface-container shadow-sm group-hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A homeowner checking residential boiler pressure gauge in a clean basement utility space, warm daylight" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA5pT9TR-JT9HMhAOgR6e40ewwq7WkKaeH_tv5ZKTQ_Bf300VKf8pr_54OJ4_8G5gHXk_mzJb8osvZhwR0OWIYL-9ZXQ7RqHxsfI0XnfArIZVWmmr_fP5wMvGbUenptZPzQOKbQHI_ZS20-vRcrTfNG5g3D3jfQkKwLrFouqp1s6lL7ridSZQFM4wVqH6rHQ9H8UMNqURl5SdL4PcISsMe8Nacz1ToSUtzvmkKXJHgrw5p3KOa_Bw1k8g')"></div>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>January 24, 2025</span>
+<span>•</span>
+<span class="text-primary font-bold">Plumbing</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">
+          10 Essential plumbing tips to prevent winter pipe bursts in NJ
+        </h3>
+</article>
+<!-- Article 2 -->
+<article class="flex flex-col gap-space-sm group cursor-pointer">
+<div class="w-full h-56 rounded-2xl overflow-hidden bg-surface-container shadow-sm group-hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Modern heat pump outdoor compressor unit with clean copper piping and thermal insulation, sharp architectural style" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRD7efiRRlieTxRGQ5smUDT6qqGlpOtdL9KPadAd2U4A8eAPnKZZX29PdxiRARNlxbMi7B9ftH9EzjCWwG1yb6VmC-8FkwKTLl12MBNE51KOUj-OWXI_kv9x_3G23C2o_vZfT0C_yMEL-R9Jj18Nqy1jTroXup2QWXV2Kw7dcrZ8lYla2wzcLXqnjY0d5siX0LwR42eWoF7WEoUhTHmQTCQloTurH2sDCPtjZCbbHDdHTeESQisnRtzQ')"></div>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>January 18, 2025</span>
+<span>•</span>
+<span class="text-primary font-bold">Heating &amp; AC</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">
+          The ultimate guide to seasonal boiler &amp; heat pump efficiency
+        </h3>
+</article>
+<!-- Article 3 -->
+<article class="flex flex-col gap-space-sm group cursor-pointer">
+<div class="w-full h-56 rounded-2xl overflow-hidden bg-surface-container shadow-sm group-hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Professional plumber giving quote invoice tablet to homeowner in modern hallway, friendly and reliable expression" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBafFflEM5jVxnQkATKjo680_K08KG2fcKsNOFG8D_fDNcugW0SHB4suAarJwhGb6peraIo35yvgF8-_oH0Q4G5Jh8h9j2eBnJUZSc6J77tMxGGOAT6nUrsxFuip-JQdWcfLHQvrLwGP0qyn2oIkPPOztL8G6c4kBVk55qxUF1dQSFL8C1uajcTA0L1z9EfiV4qtW1-gdWPqI_Mofk1mlws32V2ZkO7M33LRzL2PEifU_dbji6YwrdqSg')"></div>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>January 10, 2025</span>
+<span>•</span>
+<span class="text-primary font-bold">Hiring Guide</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">
+          How to choose the right licensed HVAC master contractor
+        </h3>
+</article>
+</div>
+</section>
+<!-- SECTION 12: GOOGLE MAP & VERIFIED SERVICE COVERAGE -->
+<section class="w-full max-w-7xl mx-auto px-margin lg:px-margin-lg pb-space-2xl">
+<div class="rounded-3xl bg-surface-container p-space-lg sm:p-space-xl flex flex-col lg:flex-row gap-gutter-lg items-center">
+<div class="w-full lg:w-1/2 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs text-primary font-bold">
+<span class="material-symbols-outlined text-[20px] text-error">place</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Northern New Jersey Headquarters</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg font-bold text-on-surface">Verified Local Google Business Profile</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Our rapid mobile units are strategically positioned around Passaic, Bergen, Essex, and Morris counties to guarantee response times under 60 minutes for emergencies.
+        </p>
+<div class="flex flex-col gap-space-xs pt-space-xs font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs text-on-surface font-semibold">
+<span class="material-symbols-outlined text-primary text-[18px]">phone</span>
+<a class="hover:underline text-primary font-bold" href="tel:+19737694940">+1 (973) 769-4940</a>
+<span class="text-on-surface-variant font-normal">(24/7 Field Lines Open)</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface font-semibold">
+<span class="material-symbols-outlined text-primary text-[18px]">schedule</span>
+<span>Open 24 Hours • 7 Days a Week • 365 Days a Year</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<a class="px-space-md py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-bold transition-colors flex items-center gap-1 shadow-sm" href="https://maps.app.goo.gl/NUCd1rZ4XZPw5wsK9" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">navigation</span> Open in Google Maps
+          </a>
+</div>
+</div>
+<!-- Map Display Container -->
+<div class="w-full lg:w-1/2 h-72 sm:h-80 rounded-2xl overflow-hidden shadow-inner relative">
+<div class="w-full h-full bg-cover bg-center" data-location="Passaic County, NJ" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUOBebpsw9yMS7WVlgX3OrLld7PqdTW1elNL8yt4A51PpCuzfWdwZcTUlBEQkn5bIjhaOSws1k-9NlNTDLfC6OWcmgZMEpao08X7BVO3749SlmXLMX_GoJfKJqt8D4GcfGwIDBm_6SNuwA3uEWY4UgHgK4mRMqWstCswRlltDg4IL9Cda205B15a68HgVJITDOAsD0zRfyC8HMHY2ApFzQgHBpfS_dA4tqLffWjfuUHcy8XtHTz8jBfw')"></div>
+<div class="absolute bottom-4 left-4 bg-surface-container-lowest/95 backdrop-blur px-space-md py-space-xs rounded-xl shadow-md flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Live GPS Unit Tracking Active</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript -->
+<script>
+    // Testimonial Carousel Data
+    const testimonials = [
+      {
+        text: "The emergency team at A1 Anytime responded at 1:30 AM when our basement water heater blew a valve. They were here within 35 minutes, shut down the line, and installed a clean replacement by morning. Lifesavers!",
+        author: "Lisa M.",
+        location: "Wayne, NJ • Verified Homeowner",
+        avatar: "LM"
+      },
+      {
+        text: "Our gas furnace gave out during a sub-zero freeze in January. A1's technician arrived with all the replacement igniter parts on the truck and had our home warm again before lunchtime. Transparent flat pricing with zero surprises.",
+        author: "Robert D.",
+        location: "Clifton, NJ • Property Manager",
+        avatar: "RD"
+      },
+      {
+        text: "Installed a multi-zone ductless heat pump system for our whole home. Exceptional precision, clean ductwork, and our summer electric bills dropped by 35%. The most professional contractors we have ever worked with.",
+        author: "Mark & Karen S.",
+        location: "Montclair, NJ • Residential Client",
+        avatar: "MS"
+      }
+    ];
+
+    let currentTestimonialIdx = 0;
+
+    function changeTestimonial(direction) {
+      currentTestimonialIdx = (currentTestimonialIdx + direction + testimonials.length) % testimonials.length;
+      const t = testimonials[currentTestimonialIdx];
+      
+      const textEl = document.getElementById('testimonialText');
+      const nameEl = document.getElementById('clientName');
+      const locEl = document.getElementById('clientLocation');
+      const avEl = document.getElementById('clientAvatar');
+
+      if (textEl && nameEl && locEl && avEl) {
+        textEl.style.opacity = '0';
+        setTimeout(() => {
+          textEl.innerHTML = '&ldquo;' + t.text + '&rdquo;';
+          nameEl.textContent = t.author;
+          locEl.textContent = t.location;
+          avEl.textContent = t.avatar;
+          textEl.style.opacity = '1';
+        }, 150);
+      }
+    }
+
+    // Interactive Toast on Emergency Dispatch Request
+    function submitEmergencyForm(form) {
+      const toast = document.getElementById('toastNotification');
+      if (toast) {
+        toast.classList.remove('translate-y-32', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        form.reset();
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-32', 'opacity-0');
+        }, 4500);
+      }
+    }
+
+    // Video Play/Pause Micro-interaction
+    let isPlaying = true;
+    function togglePlayState(button) {
+      isPlaying = !isPlaying;
+      const icon = button.querySelector('span');
+      if (icon) {
+        icon.textContent = isPlaying ? 'pause' : 'play_arrow';
+      }
+    }
+
+    // Select Plan Quick Interaction
+    function selectPlan(planName) {
+      const form = document.getElementById('heroServiceForm');
+      if (form) {
+        form.scrollIntoView({ behavior: 'smooth' });
+        const nameInput = form.querySelector('input[type="text"]');
+        if (nameInput) {
+          nameInput.focus();
+        }
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-inverse-surface text-inverse-on-surface"><div class="max-w-7xl mx-auto px-margin lg:px-margin-lg pt-space-2xl pb-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-lg pb-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">hvac</span></div><span class="font-headline-sm text-headline-sm uppercase text-surface-container-lowest font-bold tracking-tight">A1 ANYTIME</span></div><p class="font-body-sm text-body-sm text-surface-container">Immediate, dependable residential &amp; commercial mechanical contractors serving northern NJ with true 24/7/365 field readiness.</p><div class="flex items-center gap-space-xs text-secondary-fixed"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-label-sm text-label-sm font-bold uppercase tracking-wide">Fully Licensed, Bonded &amp; Insured</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md font-bold uppercase tracking-wider text-surface-container-lowest">Core Services</span><div class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-surface-container hover:text-surface-container-lowest transition-colors" data-path="services" href="#">Emergency Plumbing Repairs</a><a class="font-body-sm text-body-sm text-surface-container hover:text-surface-container-lowest transition-colors" data-path="services" href="#">Heating &amp; Boiler Installation</a><a class="font-body-sm text-body-sm text-surface-container hover:text-surface-container-lowest transition-colors" data-path="services" href="#">Central AC &amp; Ductless Systems</a><a class="font-body-sm text-body-sm text-surface-container hover:text-surface-container-lowest transition-colors" data-path="services" href="#">Water Heater Replacements</a><a class="font-body-sm text-body-sm text-surface-container hover:text-surface-container-lowest transition-colors" data-path="services" href="#">Drain Cleaning &amp; Hydro Jetting</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md font-bold uppercase tracking-wider text-surface-container-lowest">Company &amp; Trust</span><div class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-surface-container hover:text-surface-container-lowest transition-colors" data-path="why-choose-us" href="#">Why Choose A1 Anytime</a><a class="font-body-sm text-body-sm text-surface-container hover:text-surface-container-lowest transition-colors" data-path="pricing" href="#">Upfront Flat-Rate Pricing</a><a class="font-body-sm text-body-sm text-surface-container hover:text-surface-container-lowest transition-colors" data-path="reviews" href="#">Customer Testimonials</a><a class="font-body-sm text-body-sm text-surface-container hover:text-surface-container-lowest transition-colors" data-path="faq" href="#">Frequently Asked Questions</a><a class="font-body-sm text-body-sm text-surface-container hover:text-surface-container-lowest transition-colors" data-path="google-location" href="#">Service Area Coverage</a></div></div><div class="flex flex-col gap-space-md"><span class="font-label-md text-label-md font-bold uppercase tracking-wider text-surface-container-lowest">24/7 Immediate Help</span><div class="p-space-md rounded-xl bg-surface-container-low/10 flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm text-surface-variant uppercase font-semibold">Hotline Dispatch</span><a class="font-headline-sm text-headline-sm text-secondary-fixed hover:underline font-bold" href="tel:+19737694940">+1 (973) 769-4940</a><p class="font-body-sm text-[12px] text-surface-container leading-tight mt-1">On-call technicians stationed locally across Passaic, Bergen, and Essex counties.</p></div><a class="flex items-center gap-space-xs text-surface-container hover:text-surface-container-lowest transition-colors font-label-sm text-label-sm" data-path="google-location" href="#"><span class="material-symbols-outlined text-[18px] text-secondary-container">pin_drop</span><span>View Verified Google Business Profile</span></a></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-surface-container">© 2025 A1 Anytime Plumbing Heating &amp; AC. All rights reserved.</p><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-surface-container hover:text-surface-container-lowest transition-colors" data-path="faq" href="#">Privacy Policy</a><a class="font-body-sm text-body-sm text-surface-container hover:text-surface-container-lowest transition-colors" data-path="faq" href="#">Terms of Service</a><a class="font-body-sm text-body-sm text-surface-container hover:text-surface-container-lowest transition-colors" data-path="google-location" href="#">Map &amp; Directions</a></div></div></div></footer></body></html>
